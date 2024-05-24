@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="bg-main-color md:h-screen">
       <Navbar/>
-      <div className="flex flex-col items-center md:justify-center md:h-screen">
+      <div className="flex flex-col items-center md:justify-center">
         <Timer/>
         <Description/>
       </div>
