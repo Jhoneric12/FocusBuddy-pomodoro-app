@@ -1,4 +1,3 @@
-# Focus Buddy
+# FocusBuddy, a pomodoro technique app
 
-
-![Screenshot 2024-05-24 185920](https://github.com/Jhoneric12/FocusBuddy-pomodoro-app/assets/95606482/8592b798-8021-480e-91a5-ece29cd1f6a7)
+![Screenshot 2024-05-24 225455](https://github.com/Jhoneric12/FocusBuddy-pomodoro-app/assets/95606482/d54a13e8-e170-4695-94f2-60d6d0e519ae)
