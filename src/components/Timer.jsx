@@ -7,9 +7,9 @@ function Timer() {
   let long;
   let timerContent;
   let pomodoroTimer = 25 * 60;
-  let shortBreakTimer = 5 * 60;
+  let shortBreakTimer = .1 * 60;
   let longBreakTimer = 10 * 60;
-  let alarm = new Audio('/public/alarm.mp3');
+  let alarm = new Audio('../../public/alarm.mp3');
   const [time, setTime] = useState(pomodoroTimer);
   const [shortTime, setShortTime] = useState(shortBreakTimer);
   const [longTime, setLongTime] = useState(longBreakTimer);
