@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 function Timer() {
 
@@ -9,7 +9,9 @@ function Timer() {
   let pomodoroTimer = 25 * 60;
   let shortBreakTimer = .1 * 60;
   let longBreakTimer = 10 * 60;
-  let alarm = new Audio('../../public/alarm.mp3');
+  // let alarm = new Audio('../../public/alarm.mp3');
+
+  const alarm = useRef(new Audio('/public/alarm.mp3'));
   const [time, setTime] = useState(pomodoroTimer);
   const [shortTime, setShortTime] = useState(shortBreakTimer);
   const [longTime, setLongTime] = useState(longBreakTimer);
@@ -48,7 +50,7 @@ function Timer() {
             clearInterval(timer);
             setTime(pomodoroTimer);
             setIsRunning(false);
-            alarm.play();
+            alarm.current.play();
             return 0;
           } 
           else {
@@ -65,7 +67,7 @@ function Timer() {
             clearInterval(short);
             setShortTime(shortBreakTimer);
             setIsRunning(false);
-            alarm.play();
+            alarm.current.play();
             return 0;
           } 
           else {
@@ -82,7 +84,7 @@ function Timer() {
             clearInterval(long);
             setLongTime(longBreakTimer);
             setIsRunning(false);
-            alarm.play();
+            alarm.current.play();
             return 0;
           } 
           else {
